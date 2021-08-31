@@ -12,7 +12,7 @@ const App = () => {
     async function fetchData() {
       const data = await fetch(API);
       const response = await data.json();
-      console.log(response);
+      // console.log(response);
       setContacts(response);
     }
     fetchData();

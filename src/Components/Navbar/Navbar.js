@@ -9,9 +9,6 @@ const Navbar = () => {
             <span className='contacts'> MY CONTACTS</span>
           </i>
         </div>
-        <div className='search'>
-          <input type='text' placeholder='Search' />
-        </div>
       </div>
     </>
   );

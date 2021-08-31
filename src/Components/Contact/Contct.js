@@ -13,15 +13,25 @@ const Contact = ({
   return (
     <>
       <div className='contact-container'>
-        <h3>Name: {name}</h3>
-        <p>Phone: {phone}</p>
+        <h3>
+          <span>Name:</span> {name}
+        </h3>
         <p>
-          Address: {suite}, {street} St,
+          <span>Phone:</span> {phone}
+        </p>
+        <p>
+          <span>Address:</span> {suite}, {street} St,
         </p>
         <p>{city}</p>
-        <p>Email: {email}</p>
-        <p>Company: {company}</p>
-        <p>Website: {website}</p>
+        <p>
+          <span>Email:</span> {email}
+        </p>
+        <p>
+          <span>Company:</span> {company}
+        </p>
+        <p>
+          <span>Website:</span> {website}
+        </p>
       </div>
     </>
   );

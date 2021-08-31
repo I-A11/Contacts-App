@@ -12,6 +12,7 @@
   --dark: #181717;
   --light: #fff;
   --red: #9b4242;
+  --blue: #0303bd;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -47,17 +48,6 @@ body {
   text-decoration: none;
 }
 
-.search input {
-  width: 300px;
-  height: 2rem;
-  font-size: 1.2rem;
-  border: 1px solid var(--red);
-  border-radius: 4px;
-  padding-left: 0.75rem;
-}
-.search input:focus {
-  outline: none;
-}
 /* card section */
 .fa-address-card {
   font-weight: 700;
@@ -92,6 +82,10 @@ body {
 }
 .contact-container h3 {
   color: var(--red);
+}
+
+.contact-container span {
+  color: var(--blue);
 }
 
 /* footer section */
