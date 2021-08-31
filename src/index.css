@@ -1,13 +1,63 @@
-body {
+/* globale */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* CSS Variables */
+:root {
+  --primary: #0c9090;
+  --dark: #181717;
+  --light: #fff;
+  --blue: #1111b6;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+  background: var(--blue);
+  font-size: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 80px;
+}
+
+.navbar-logo {
+  background-color: #0c9090;
+  background-image: linear-gradient(to bottom, #28fafa 0%, #0c9090 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+.fa-address-card {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.search input {
+  width: 300px;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  padding-left: 0.75rem;
+}
+.search input:focus {
+  outline: none;
 }
