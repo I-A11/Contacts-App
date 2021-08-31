@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Contact from "./Components/Contact/Contct";
+import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 
 // API
@@ -24,6 +25,7 @@ const App = () => {
           <Contact key={contact.id} {...contact} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
