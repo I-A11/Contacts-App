@@ -26,7 +26,6 @@ body {
   width: 100vw;
   justify-content: space-around;
   align-items: center;
-  background: transparent;
   background: var(--red);
   font-size: 1.5rem;
   top: 0;
@@ -47,6 +46,18 @@ body {
   font-size: 1.75rem;
   text-decoration: none;
 }
+
+.search input {
+  width: 300px;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  padding-left: 0.75rem;
+}
+.search input:focus {
+  outline: none;
+}
 /* card section */
 .fa-address-card {
   font-weight: 700;
@@ -65,13 +76,14 @@ body {
   display: grid;
   align-items: center;
   color: #424040;
+  font-size: 1.2rem;
   min-width: 350px;
-  height: 150px;
+  height: auto;
   background: var(--light);
   border-radius: 15px;
   box-shadow: var(--shadow);
   margin: 50px 0;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   transition: transform 0.5s;
 }
 

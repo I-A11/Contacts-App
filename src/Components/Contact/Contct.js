@@ -1,16 +1,28 @@
 import React from "react";
 
-const Contact = ({ name, address, email, phone, company, website }) => {
+const Contact = ({
+  name,
+  street,
+  suite,
+  city,
+  email,
+  phone,
+  company,
+  website,
+  term,
+  searchKeyword,
+}) => {
   return (
     <>
       <div className='contact-container'>
         <h3>Name: {name}</h3>
         <p>Phone: {phone}</p>
-
-        {/* <p>Address:{address}</p> */}
-
+        <p>
+          Address: {suite}, {street} St,
+        </p>
+        <p>{city}</p>
         <p>Email: {email}</p>
-        {/* <p>{company}</p> */}
+        <p>Company: {company}</p>
         <p>Website: {website}</p>
       </div>
     </>
