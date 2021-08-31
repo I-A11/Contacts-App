@@ -8,11 +8,15 @@
 
 /* CSS Variables */
 :root {
-  --primary: #0c9090;
+  --primary: #b1a5a5;
   --dark: #181717;
   --light: #fff;
-  --blue: #1111b6;
+  --red: #9b4242;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body {
+  background: var(--primary);
 }
 
 /* navbar */
@@ -22,11 +26,9 @@
   justify-content: space-around;
   align-items: center;
   background: transparent;
-  background: var(--blue);
+  background: var(--red);
   font-size: 1.5rem;
-  position: sticky;
   top: 0;
-  z-index: 999;
   height: 80px;
 }
 
@@ -50,14 +52,26 @@
   letter-spacing: 1.5px;
 }
 
-.search input {
-  width: 300px;
-  height: 2rem;
-  font-size: 1.2rem;
-  border: 1px solid var(--blue);
-  border-radius: 4px;
-  padding-left: 0.75rem;
+.contacts-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-column-gap: 20px;
+  justify-items: center;
+  padding: 3rem 0;
 }
-.search input:focus {
-  outline: none;
+
+.contact-container {
+  display: grid;
+  align-items: center;
+  color: #424040;
+  min-width: 350px;
+  height: 150px;
+  margin-top: 15px;
+  background: var(--light);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+  margin: 50px 0;
+  padding: 0 1rem;
 }
