@@ -7,9 +7,7 @@ import Navbar from "./Components/Navbar/Navbar";
 const API = "https://jsonplaceholder.typicode.com/users";
 const App = () => {
   const [contacts, setContacts] = useState([]);
-  const [searchTerm, setsearchTerm] = useState("");
 
-  const searchHandler = () => {};
   useEffect(() => {
     async function fetchData() {
       const data = await fetch(API);
@@ -31,8 +29,6 @@ const App = () => {
             suite={contact.address.suite}
             city={contact.address.city}
             company={contact.company.name}
-            term={searchTerm}
-            searchKeyword={searchHandler}
           />
         ))}
       </div>

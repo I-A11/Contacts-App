@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ term, getSearchTerm }) => {
+const Navbar = () => {
   return (
     <>
       <div className='navbar'>
@@ -10,12 +10,7 @@ const Navbar = ({ term, getSearchTerm }) => {
           </i>
         </div>
         <div className='search'>
-          <input
-            type='text'
-            placeholder='Search'
-            value={term}
-            onChange={getSearchTerm}
-          />
+          <input type='text' placeholder='Search' />
         </div>
       </div>
     </>

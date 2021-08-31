@@ -9,8 +9,6 @@ const Contact = ({
   phone,
   company,
   website,
-  term,
-  searchKeyword,
 }) => {
   return (
     <>
