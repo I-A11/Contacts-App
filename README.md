@@ -13,6 +13,7 @@ This clones the repo
 This installs the required dependencies
 
 To run the React project.
+
 4- $ npm start
 
 
