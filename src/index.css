@@ -12,7 +12,7 @@
   --dark: #181717;
   --light: #fff;
   --red: #9b4242;
-  --blue: #0303bd;
+  --teal: #0c9090;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-logo {
-  background-color: #0c9090;
+  background-color: var(--teal);
   background-image: linear-gradient(to bottom, #28fafa 0%, #0c9090 100%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -66,7 +66,7 @@ body {
   display: grid;
   align-items: center;
   color: #424040;
-  font-size: 1.2rem;
+  font-size: 1rem;
   min-width: 350px;
   height: auto;
   background: var(--light);
@@ -77,15 +77,22 @@ body {
   transition: transform 0.5s;
 }
 
+.fa-user-circle {
+  text-align: center;
+  color: var(--teal);
+  padding: 10px 0;
+}
+
 .contact-container:hover {
   transform: translateY(10px);
 }
 .contact-container h3 {
   color: var(--red);
+  padding-bottom: 10px;
 }
 
 .contact-container span {
-  color: var(--blue);
+  color: var(--teal);
 }
 
 /* footer section */

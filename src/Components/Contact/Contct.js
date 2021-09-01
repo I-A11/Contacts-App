@@ -13,6 +13,7 @@ const Contact = ({
   return (
     <>
       <div className='contact-container'>
+        <i class='fas fa-user-circle fa-4x'></i>
         <h3>
           <span>Name:</span> {name}
         </h3>
